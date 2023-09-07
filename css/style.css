@@ -1,0 +1,50 @@
+/*Regole di reset*/
+
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*Regole di layout*/
+
+.main-content {
+    margin: 50px;
+}
+
+.container {
+    margin: 0 auto;
+    height: 100vh; 
+    overflow: hidden;
+}
+
+.row {
+    flex-grow: 1; 
+}
+
+/*DEBUG*/
+
+.debug .main-content {
+    background-color: antiquewhite;
+    min-height: 50px;
+}
+
+.debug .row {
+    background-color: aquamarine;
+    min-height: 50px;
+}
+
+.debug .col {
+    background-color: brown;
+    border: 2px black solid ; 
+    min-height: 50px;
+}
+
+.debug .toolbar {
+    min-height: 50px; 
+    background-color: blue;
+}
