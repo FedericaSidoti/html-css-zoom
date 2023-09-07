@@ -12,32 +12,29 @@ img {
 
 /*Regole di layout*/
 
-.container {
-    margin: 0 20px;
-	background-color: black;
-    height: 100vh;;
+
+.body {
+    background-color: black;
+    height: 100vh;
 }
 
+.main {
+    padding: 20px;
+    height: calc(100% - 60px);
+    display: flex;
+}
 
-.main-content {
-    display: flex; 
+.card-content {
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    flex-direction: column;
-    min-height: 1px;
-    max-height: 100%;
-    max-width: 100%;
-}
-
-.row {
-    display: flex; 
-    flex-wrap: wrap;
-    width: 100%;
     flex-grow: 1;
 }
 
-.card__figure {
+.card {
+    width: 150px;
     position: relative;
+    justify-content: center;
 }
 
 
@@ -56,7 +53,10 @@ img {
 	flex-shrink: 0;
 	background-color: #333;
 	color: white;
-	max-height: 30px; 
+    height: 50px;
+    position: sticky;
+    bottom: 0;
+    left: 0;
 }
 
 /*DEBUG*/
