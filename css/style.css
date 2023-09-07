@@ -12,36 +12,49 @@ img {
 
 /*Regole di layout*/
 
-.main-content {
-    margin: 50px;
-}
-
 .container {
     margin: 0 auto;
     height: 100vh; 
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    padding: 50px;
+    flex-grow: 1; 
 }
 
 .row {
-    flex-grow: 1; 
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    width: calc(100% /7);
+}
+
+.aside {
+    flex-shrink: 0;
 }
 
 /*DEBUG*/
 
 .debug .main-content {
     background-color: antiquewhite;
-    min-height: 50px;
+    min-height: 10px;
 }
 
 .debug .row {
     background-color: aquamarine;
-    min-height: 50px;
+    min-height: 10px;
 }
 
 .debug .col {
     background-color: brown;
     border: 2px black solid ; 
-    min-height: 50px;
+    min-height: 10px;
 }
 
 .debug .toolbar {
