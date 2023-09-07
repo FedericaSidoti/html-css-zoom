@@ -18,8 +18,41 @@ img {
     height: 100vh;
 }
 
+.header {
+    height: 20px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0; 
+    opacity: 1;
+    z-index: 10; 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.tag-container {
+    position: absolute;
+    top: 20px;
+    right: 10px; 
+    z-index: 10;
+
+}
+
+.tag {
+    background-color: gray;
+    line-height: 1.5em;
+    display: inline-block;
+    font-size: 11px;
+    color: white;
+    margin: 0 2px; 
+    padding: 0 5px;
+    border-radius: 3px;
+    opacity: 70%;
+}
+
 .main {
-    padding: 20px;
+    padding: 30px 20px 20px 20px;
     height: calc(100% - 60px);
     display: flex;
 }
