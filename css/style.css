@@ -92,6 +92,26 @@ img {
     position: sticky;
     bottom: 0;
     left: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.icons-container {
+    display: flex;
+    column-gap: 10px;
+}
+
+.icon-content {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /*DEBUG*/
