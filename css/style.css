@@ -20,7 +20,7 @@ img {
 }
 
 .header {
-    height: 20px;
+    height: 50px;
     position: sticky;
     top: 0;
     left: 0;
@@ -34,11 +34,11 @@ img {
 
 .tag-container {
     position: absolute;
-    bottom: 20px;
+    top: 15px;
     right: 10px; 
     z-index: 10;
-
 }
+
 
 .tag {
     background-color: gray;
@@ -53,9 +53,9 @@ img {
 }
 
 .main {
-    padding: 30px 20px 20px 20px;
+    padding: 20px;
     display: flex;
-    height: calc(100vh - 70px);
+    height: calc(100vh - 100px);
     overflow: auto;
 }
 
@@ -64,13 +64,15 @@ img {
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    row-gap: 5px; 
+    row-gap: 8px; 
     max-width: 100%;
 }
 
 .card {
     position: relative;
     padding: 0 2px; 
+    min-width: 80px;
+    max-width: 150px;
 }
 
 .card__img {
