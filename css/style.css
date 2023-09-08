@@ -16,6 +16,8 @@ img {
 .body {
     background-color: black;
     height: 100vh;
+    display: flex; 
+    flex-direction: column;
 }
 
 .header {
@@ -53,15 +55,14 @@ img {
 
 .main {
     padding: 30px 20px 20px 20px;
-    height: calc(100% - 60px);
     display: flex;
+    flex-grow: 1;
 }
 
 .card-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    flex-grow: 1;
 }
 
 .card {
